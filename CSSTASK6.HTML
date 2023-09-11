@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #F0F0F0; /* Light gray background color */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff; /* White login container */
+            width: 300px;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .user-image img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #4CAF50; /* Green border */
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #333; /* Dark gray text color */
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-group .remember-me-label {
+            color: #666; /* Slightly lighter gray text color */
+        }
+
+        .form-group .login-button {
+            background-color: #4CAF50; /* Green login button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-group .cancel-link,
+        .form-group .forgot-password-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .form-group .cancel-link a,
+        .form-group .forgot-password-link a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .form-group .cancel-link a:hover,
+        .form-group .forgot-password-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="user-image">
+            <img src="user-image.jpg" alt="User Image">
+        </div>
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember" name="remember">
+                <label class="remember-me-label" for="remember">Remember me</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="login-button" value="Login">
+            </div>
+            <div class="form-group">
+                <div class="cancel-link">
+                    <a href="#">Cancel</a>
+                </div>
+                <div class="forgot-password-link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
